@@ -6,11 +6,23 @@
 //
 
 import UIKit
+let weatherTable: UITableView()
 
 class ViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
+        weatherTable.dataSource = self
     }
+    
+    
 }
+
+
+extension weatherTable: UITableViewDataSource, UITableViewDelegate {
+    
+}
+
+
 
